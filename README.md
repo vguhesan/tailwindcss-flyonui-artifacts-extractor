@@ -1,8 +1,18 @@
 # TailwindCSS, FlyonUI integration for design delivered by Python or Golang backend
 
-<a href="https://" target="_blank">anchor_text</a>
+<a href="[https://](https://github.com/vguhesan/tailwindcss-flyonui-artifacts-extractor)" target="_blank">tailwindcss-flyonui-artifacts-extractor</a>
 
 This project was created using `bun init` in bun v1.3.5. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+
+## tldr;
+
+This project allows you to extract the stylesheets and JavaScript artifacts needed to power your own Golang or Python based backend server delivering your frontend dashboard as either a static or dynamic website. 
+
+You cab grab the latest Flyonui, v2.4.1 artifacts here: [./dist/FlyonUI-bundle.zip](./dist/FlyonUI-bundle.zip) 
+
+But if you want to build your own using the latest TailwindCSS and FlyonUI, then follow the step by step below to generate your own custom artifacts under the [Summary](#summary) section below.
+
+But on the other hand, if you want to fully understand how the generator works then read the full step-by-step instructions below.
 
 ## Why?
 
@@ -10,7 +20,7 @@ If you are a frontend developer using either a Python Flask/Django  or a Golang 
 
 Below is a typical deployment pattern where this would be useful:
 
-![delivering your frontend via Golang or Python backend](./docs/_res/tier-1-deployment-pattern.png "delivering your frontend via Golang or Python backend")
+![delivering your frontend via Golang or Python backend](./_res/tier-1-deployment-pattern.png "delivering your frontend via Golang or Python backend")
 
 ## Base setup
 
@@ -158,7 +168,7 @@ caddy run --watch
 
 In a browser open and visit: `https://localhost/`.
 
-![Starter Page with no styles rendered](./docs/_res/starter-site-no-styles.png "Starter Page with no styles rendered")
+![Starter Page with no styles rendered](./_res/starter-site-no-styles.png "Starter Page with no styles rendered")
 
 ## Adding the styles
 
@@ -213,7 +223,7 @@ bunx  postcss src/css/main.css --output target/css/tailwind-only.css
 
 You should now have the base Tailwindcss stylesheet under `./dist/css/`. Below is a sample screenshot of how the file contents may look like. (Your output may vary)
 
-![Generated Tailwindcss Stylesheet](./docs/_res/generated-tailwindcss-stylesheet.png "Generated Tailwindcss Stylesheet")
+![Generated Tailwindcss Stylesheet](./_res/generated-tailwindcss-stylesheet.png "Generated Tailwindcss Stylesheet")
 
 As of writing this article, Tailwindcss does not have any JavaScript scripts that are utilized for any front-end. Therefore no JS is generated.
 
@@ -275,7 +285,7 @@ EOF
 ```
 Now if you reload the site in your browser, you should see the change with TailwindCSS now rendering correctly (as shown below)
 
-![Sample page with Tailwindcss parts working](./docs/_res/sample-site-with-tailwindcss.png "Sample page with Tailwindcss parts working")
+![Sample page with Tailwindcss parts working](./_res/sample-site-with-tailwindcss.png "Sample page with Tailwindcss parts working")
 
 ## Generating the FlyonUI stylesheet and JavaScript
 
@@ -386,7 +396,7 @@ EOF
 ```
 Now if you reload the site in your browser, you should see the change with TailwindCSS now rendering correctly (as shown below)
 
-![Sample page with Tailwindcss and FlyonUI parts working](./docs/_res/sample-site-with-tailwindcss-and-flyonui.png "Sample page with Tailwindcss and FlyonUI parts working")
+![Sample page with Tailwindcss and FlyonUI parts working](./_res/sample-site-with-tailwindcss-and-flyonui.png "Sample page with Tailwindcss and FlyonUI parts working")
 
 # Summary
 
