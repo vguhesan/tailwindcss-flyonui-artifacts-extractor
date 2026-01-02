@@ -14,6 +14,11 @@ But if you want to build your own using the latest TailwindCSS and FlyonUI, then
 
 But on the other hand, if you want to fully understand how the generator works then read the full step-by-step instructions below.
 
+To learn more about the dashboard templating system visit the following resources:
+
+- <a href="https://flyonui.com/" target="_blank">FlyonUI Dashboards</a>
+- <a href="https://tailwindcss.com/" target="_blank">TailwindCSS Design System</a>
+
 ## Why?
 
 If you are a frontend developer using either a Python Flask/Django  or a Golang http/Fiber/Gin (or other similar Golang frameworks), and do not see a need for a frontend server delivered via a Node (TypeScript or JavaScript) framework but like the UI framework and design offered by TailwindCSS and FlyonUI then you need a way to extract out the generated styles and dependent scripts for using in your backend framework that pushes the content for your frontend website.
