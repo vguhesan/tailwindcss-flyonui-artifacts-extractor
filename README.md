@@ -429,7 +429,8 @@ cp ./node_modules/flyonui/flyonui.js ./target/js/flyonui.js
 
 That's it! 
 
-I hope this article has been useful for you. If you like this article, please consider subscribing and re-share this article in your favorite social post. 
+I hope this article has been useful for you. If you like this article, please consider subscribing and re-share this article in your favorite social post. The blog I run can be found here:
+<a href="https://DigitalRiver.blog/" target="_blank">DigitalRiver.blog</a>
 
 Thanks for checking out.
 
